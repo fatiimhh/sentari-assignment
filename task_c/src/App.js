@@ -34,7 +34,7 @@ export default function App() {
             <XAxis dataKey="issue" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="count" fill="#82ca9d">
+            <Bar dataKey="count" fill="#2770cfff">
               <LabelList dataKey="count" position="top" />
             </Bar>
           </BarChart> 
