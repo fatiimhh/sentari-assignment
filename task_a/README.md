@@ -19,3 +19,4 @@ This React app simulates ethical Instagram outreach using public handles. Messag
 **Notes:**  
 - All messages are simulated; no actual Instagram API calls are made  
 - Rate-limiting delay is configurable in the `sendMessages` function
+

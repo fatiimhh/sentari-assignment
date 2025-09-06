@@ -16,5 +16,3 @@ This task collects and classifies app reviews for Day One, Journey, and Daily. D
 3. `node fetch_reviews.js` – Generates `reviews_labeled.json` and `reviews.csv`  
 4. `node review_insights.js` – Prints frequency counts for each issue category  
 
-**Trade-offs & Next Steps:**  
-Used dummy data for faster testing and to avoid scraping sensitive data. Real review collection would give more accurate insights but would require API access or scraping compliance. Next steps could include collecting actual user reviews from app stores and Reddit, enhancing the classifier with NLP techniques, and integrating with Task C’s dashboard for interactive analysis.
