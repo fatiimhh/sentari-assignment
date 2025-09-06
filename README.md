@@ -1,9 +1,9 @@
 # Sentari AI Internship — Starter Repo
 
 ## Tasks
-- **Task A**: Simulates IG outreach safely, with rate-limiting.
-- **Task B**: Collects reviews from Apple App Store + classifies issues.
-- **Task C**: Dashboard visualizing common issues (bonus).
+- **Task A**: Simulates IG outreach safely, with rate-limiting (React).
+- **Task B**: Collects reviews from Apple App Store + classifies issues (Node.js).
+- **Task C**: Dashboard visualizing common issues (React + Recharts).
 
 ## Trade-offs
 I chose JavaScript/React/Node for consistency across frontend + backend. 
