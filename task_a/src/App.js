@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Simulated IG outreach with rate-limited messages
 export default function App() {
   const [handles, setHandles] = useState(["@user1", "@user2", "@user3"]);
   const [newHandle, setNewHandle] = useState("");
@@ -16,6 +17,7 @@ export default function App() {
     });
   };
 
+  // Add new handle if not duplicate
   const addHandle = () => {
     if (newHandle.trim() && !handles.includes(newHandle.trim())) {
       setHandles([...handles, newHandle.trim()]);
@@ -23,6 +25,7 @@ export default function App() {
     }
   };
 
+  // Clear sent messages
   const clearSent = () => {
     setSent([]);
   };
