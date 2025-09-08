@@ -3,7 +3,7 @@
 **Overview:**  
 I collected and classified **300 app reviews** (dummy data for testing purposes) from the Apple App Store. Each review was categorized into top issues including Sync Issues, Notifications, Data Loss, Pricing, Bugs/Crashes, and Other.
 
----
+----
 
 ## Top Issues Summary  
 

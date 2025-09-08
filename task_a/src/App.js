@@ -2,17 +2,22 @@ import React, { useState } from "react";
 
 // Simulated IG outreach with rate-limited messages
 export default function App() {
-  const [handles, setHandles] = useState(["@user1", "@user2", "@user3"]);
+  // 2 real competitor followers 
+  const [handles, setHandles] = useState(["@mrscomptoncat", "@vadym.semeniuk"]);
   const [newHandle, setNewHandle] = useState("");
   const [sent, setSent] = useState([]);
 
+  const DUMMY_ACCOUNT = "@mydummyaccount"; // simulated sender (dummy account for outreach)
+
+  // Simulate sending messages
   const sendMessages = () => {
     handles.forEach((handle, i) => {
       setTimeout(() => {
         setSent((prev) => [
           ...prev,
-          { handle, msg: "Hi! Thanks for following us." },
+          { handle, msg: `Hi! Thanks for following us. (from ${DUMMY_ACCOUNT})` },
         ]);
+        console.log(`${DUMMY_ACCOUNT} sent message to ${handle}`);
       }, i * 1000); // 1s delay = simulate rate limit
     });
   };
@@ -38,7 +43,7 @@ export default function App() {
         </h1>
 
         <p className="text-gray-600 mb-6 text-center">
-          Simulate safe outreach with rate-limited messages.
+          Simulate safe outreach to real competitor followers using a dummy account.
         </p>
 
         <div className="flex mb-4 gap-2">
@@ -77,7 +82,7 @@ export default function App() {
               key={idx}
               className="bg-green-50 border border-green-200 rounded-lg p-3 text-green-700"
             >
-              Sent to <span className="font-semibold">{s.handle}</span>: {s.msg}
+              {DUMMY_ACCOUNT} sent to <span className="font-semibold">{s.handle}</span>: {s.msg}
             </li>
           ))}
         </ul>
